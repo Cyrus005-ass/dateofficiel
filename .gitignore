@@ -1,0 +1,25 @@
+# Secrets — ne jamais versionner (copier depuis les fichiers *.example.php)
+/includes/config.php
+/includes/smtp_config.php
+
+# Photos / pièces uploadées (garder le dossier vide avec .gitkeep si besoin)
+/assets/img/uploads/*
+!/assets/img/uploads/.gitkeep
+
+# OS / IDE
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archives locales / sauvegardes
+*.zip
+
+# Logs
+*.log
+
+# Composer (si ajouté plus tard)
+/vendor/

@@ -1,0 +1,69 @@
+RACINE DU CODE SHOPPING DATE
+
+1. ACCUEIL ET STRUCTURE GLOBALE
+- index.php : page d accueil, hero, concept, etapes, FAQ, studio, partenaires, embed video Episode 0
+- includes/header.php : meta, favicon, Font Awesome, navbar desktop/mobile
+- includes/footer.php : footer principal, navigation, partenaires, prestataires
+- assets/css/style.css : styles globaux du site, formulaires, footer, partenaires, admin, responsive
+- assets/js/main.js : animations globales, scroll, reveal, recherche live, uploads, apercu image admin
+
+2. CONFIGURATION CENTRALE
+- includes/config.php : calcul de $BASE, configuration environnement, liens publics, partenaires, equipe tech, direction du projet
+- includes/db.php : connexion PDO
+- includes/functions.php : helpers formulaire, participants, stats, admins, uploads
+- includes/mail.php : gestion des emails de notification
+- includes/smtp_config.php : configuration SMTP
+
+3. INSCRIPTION CANDIDAT
+- inscription/step1.php : identite
+- inscription/step2.php : profil
+- inscription/step3.php : preferences candidat
+- inscription/step4.php : photo, carte d identite, description, validation finale
+- inscription/confirmation.php : page finale de confirmation
+
+4. BASE DE DONNEES
+- database/shopping_date.sql : structure SQL des tables participants, admins, selections
+
+5. DONNEES ENREGISTREES POUR LE CANDIDAT
+- participants.nom
+- participants.prenom
+- participants.email
+- participants.telephone
+- participants.sexe
+- participants.ville
+- participants.age
+- participants.profession
+- participants.partner_criteria
+- participants.red_flags
+- participants.green_flags
+- participants.ideal_date
+- participants.description
+- participants.photo
+- participants.carte_identite
+- participants.statut
+- participants.date_inscription
+
+6. ADMIN
+- admin/dashboard.php : vue globale, stats, inscriptions recentes, clic photo pour voir en grand
+- admin/participants.php : liste complete, fiche detaillee, photos et documents agrandissables
+- admin/select.php : gestion des selections, clic photo pour voir en grand
+- admin/admins.php : gestion des administrateurs
+- admin/login.php : connexion admin
+- admin/logout.php : deconnexion
+- admin/partials/sidebar.php : menu lateral admin
+
+7. MEDIAS ET ASSETS
+- assets/img/logo.png : logo principal Shopping Date
+- assets/img/muse.png : logo Muse Origin Studio
+- assets/img/eea.png : logo Elite Event Agency
+- assets/img/leben.png : logo Leben Entertainment
+- assets/img/uploads/ : photos et cartes d identite televersees
+
+8. POINTS CLES ACTUELS
+- les icones de reseaux sociaux utilisent Font Awesome
+- la section partenaires utilise des liens sociaux avec icones
+- la video Episode 0 sur l accueil est un embed YouTube
+- les boutons ont ete legerement agrandis globalement
+- le footer contient Shopping Date, Navigation, Partenaires et Prestataires
+- les prestataires sont affiches en bas dans une ligne dediee
+- les photos dans l admin peuvent etre ouvertes en grand au clic
