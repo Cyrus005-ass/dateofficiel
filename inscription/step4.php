@@ -96,20 +96,7 @@ require_once __DIR__ . '/../includes/header.php';
           <input type="file" id="photoInput" name="photo" accept="image/jpeg,image/png,image/webp" style="display:none">
           <div class="form-error"><?= $errors['photo'] ?? '' ?></div>
         </div>
-
-        <div class="form-group">
-          <label class="form-label">Carte d identite <span>*</span></label>
-          <div class="upload-zone" id="uploadZoneCI">
-            <div class="upload-hint">
-              <strong>Ajoutez votre carte d identite</strong><br>
-              <span style="font-size:.72rem;color:var(--gray)">JPG · PNG · WebP · Max 8 Mo</span>
-            </div>
-            <img id="cartePreview" class="upload-preview" src="" alt="Apercu carte" style="display:none">
-          </div>
-          <input type="file" id="carteInput" name="carte_identite" accept="image/jpeg,image/png,image/webp" style="display:none">
-          <div class="form-error"><?= $errors['carte_identite'] ?? '' ?></div>
-        </div>
-
+          
         <div class="form-group">
           <label class="form-label" for="description">Parlez de vous <span>*</span></label>
           <textarea id="description" name="description" class="form-control form-control-fixed <?= isset($errors['description'])?'error':'' ?>" maxlength="500" data-rules="required,min:30" data-label="La description"><?= htmlspecialchars($_POST['description'] ?? '') ?></textarea>
